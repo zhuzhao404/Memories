@@ -50,19 +50,31 @@ chsh -s /bin/zsh
 **四、配置编辑文件**
 
 1、bash编辑文件： 
+
 1）输入（打开并编辑.bash文件）：open -e .bash_profile
+
 2）如若提示文件不存在，输入（创建.bash_profile文件）：touch .bash_profile
+
 3）继续执行输入（打开并编辑.bash_profile文件）：open -e .bash_profile
+
 4）找到sdk位置，在.bash_profile文件中添加例如：export ANDROID_HOME=/Users/xxx/Library/Android/sdk
+
 5）保存.bash_profile文件，输入（让编辑内容立即生效）：source .bash_profile
 
 2、zsh编辑文件：
+
 1）输入（打开并编辑.zshrc文件）：open -e .zshrc
+
 2）如若提示文件不存在，输入（创建.zshrc文件）：touch .zshrc
+
 3）继续执行输入（打开并编辑.zshrc文件）：open -e .zshrc
+
 4）找到sdk位置，在.zshrc文件中添加例如：export ANDROID_HOME=/Users/xxx/Library/Android/sdk
+
 5）在zshrc文件中添加以下内容：source ~/.bash_profile
+
 说明：当从bash切换为zsh时，如果不想重新配置一遍.zshrc文件，可以在.zshrc文件中加上source ~/.bash_profile，从而直接从.bash_profile文件读取配置。
+
 6）保存.zshrc文件，输入（让编辑内容立即生效）：source .zshrc
 
 **五、验证是否生效即可**
